@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Hello Universe</title>
+    <!--meta tag for scaling -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/carousel.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/offcanvas.js"></script>
+
+    <script src="scripts/bootstrap.min.js"></script>
+    <!-- xs (phones), sm (tablets), md (desktops), and lg (larger desktops)-->
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header" style="color: red">CAR FOR YOU</div>
+            <!--create collapsible button for header options-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headerItems" aria-expanded="true">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="headerItems">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-home">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-floppy-disk">Gallery</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-floppy-envelope">Contact Us</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <form class="navbar-form navbar-right search-form" role="search">
+                    <input type="text" class="form-control" placeholder="Search" />
+                </form>
+
+            </div>
+
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div id="image_carousel" data-ride="carousel">
+
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/24_7.png" alt="Audi" height="345" />
+                    </div>
+                    <div class="item">
+                        <img src="images/ndtv_india.jpg" alt="Audi" height="345" />
+                    </div>
+                    <div class="item">
+                        <img src="images/ndtv_profit.jpg" alt="Audi" height="345" />
+                    </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#image_carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#image_carousel" data-slide-to="1"></li>
+                    <li data-target="#image_carousel" data-slide-to="1"></li>
+                </ol>
+
+                <a class="left carousel-control" id="left-carousel-control" href="#image_carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" id="right-carousel-control" href="#image_carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="page-content-wrapper">
+        <div class="container dataSection">
+            <div class="row">
+                <div class="col-sm-2 sidenav hidden-xs" id="sidePanel">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+            
+            <div class="col-sm-10 col-xs-12">
+                <div class="" onclick="openNav()"> BUtton</div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <b>About NDTV</b>
+                        <p>
+                            New Delhi Television Limited (NDTV) is an Indian commercial broadcasting television network founded in 1988 by husband and wife Prannoy Roy and Radhika Roy. NDTV is an acronym for the original name of the company, New Delhi Television.[2] Vikramaditya Chandra is the chief executive officer of the NDTV Group. KVL Narayan Rao is the Executive Vice Chairperson.[3]
+
+New Delhi Television has offices and studios across the country. Its three national news channels NDTV 24x7 (English), NDTV India (Hindi) and NDTV Profit (Business news) form the core of the company. Each year the channel also gives the NDTV Indian of the year awards.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-lg-4">
+                        <b>NDTV 24*7</b>
+                        <p>
+                            NDTV 24x7 is a 24-hour English-language news and current affairs television channel based in New Delhi, India.[2][3] The channel was launched in 2003, after the contract between STAR Network and the New Delhi Television expired.
+
+NDTV 24x7 has the second-highest rating among all English news channel in India.
+                        </p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+
+                        <b>NDTV India</b>
+                        <p>
+                            NDTV India (Hindi: NDTV इंडिया) is a Hindi news channel in India that is owned by New Delhi Television Limited. Noted journalist Vinod Dua has been associated with this channel.[1]
+
+In June 2016 NDTV decided to launch 2 channels called NDTV India and NDTV Spice in the UK.[2]
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                        <b>NDTV Profit</b>
+                        <p>
+                            NDTV Profit is a business news channel started by New Delhi Television in January 2005. Started to provide competition to the monopoly enjoyed by CNBC-TV18.
+
+It has a large number of journalists covering the action from the Bombay Stock Exchange (BSE) and the National Stock Exchange of India (NSE). Furthermore, it also covers the latest business deals and acts as a platform for companies to give their public results, with growth rate, net profit etc. On 14 December 2006, BSE installed one of the largest video screens in India at the BSE building to disseminate capital market information, supported by NDTV Profit.[1]
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6">
+                <div class="pull-left navbar-text">
+                    <a href="http://www.ndtv.com">@ 2016 NDTV</a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6">
+                <div class="pull-right">
+                    <div class="navbar-text"><a href="http://www.ndtv.com">About US</a></div>
+                    <div class="navbar-text"><a href="http://www.ndtv.com">Contact Us</a></div>
+                    <div class="navbar-text">Private Policy</div>
+                    <div class="navbar-text">
+                        Powered by <a href="http://www.getbootstrap.com"><i>Bootstrap</i></a><div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
